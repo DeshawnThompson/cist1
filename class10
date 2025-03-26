@@ -1,0 +1,15 @@
+testScores = [99,78,89,96]
+total = 0
+
+
+
+def getsum(testScores):
+    global total
+    for x in testScores:
+     total += x
+     return total
+def getavg():
+    Sum = getsum(testScores)
+    return Sum/len(testScores)
+def main():
+    print(getavg())
